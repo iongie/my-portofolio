@@ -1,0 +1,19 @@
+.profile-pic {
+    box-shadow: 0px 4px 6px 2px lightgrey;
+    border-radius: 50%;
+}
+
+img {
+    vertical-align: middle;
+}
+
+img {
+    border: 0;
+}
+
+.row-grey {
+    background-color: lightgrey;
+    -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+    clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+    padding: 65px 10px;
+}

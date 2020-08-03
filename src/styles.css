@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+bd-layout {
+    width: 100%;
+    height: auto;
+}
+
+bd-border-test{
+    border: 1px dotted #24b055;
+}

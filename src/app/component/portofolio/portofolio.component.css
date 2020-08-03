@@ -1,0 +1,35 @@
+.row-white {
+    padding: 65px 10px;
+}
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.img-responsive {
+    max-width: 50%;
+    height: auto;
+}
+
+img {
+    vertical-align: middle;
+}
+
+img {
+    border: 0;
+}
+
+.penjelasan {
+    width: 50%;
+    height: auto;
+    margin: 12px;
+}
+
+
+
+.ikon-teknologi {
+    width: 50%;
+    height: auto;
+    margin: 12px;
+}
