@@ -1,20 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { MediaObserver, MediaChange } from '@angular/flex-layout';
+import { ResumeComponent } from '../resume/resume.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
-  selector: 'gigih-portofolio',
-  templateUrl: './portofolio.component.html',
-  styleUrls: ['./portofolio.component.css']
+  selector: 'gigih-my-cv',
+  templateUrl: './my-cv.component.html',
+  styleUrls: ['./my-cv.component.css']
 })
-export class PortofolioComponent implements OnInit {
+export class MyCvComponent implements OnInit {
   mediaSub: Subscription;
   deviceXs: boolean;
   deviceMd: boolean;
   deviceSm: boolean;
   deviceLg: boolean;
   constructor(
-    public mediaObs: MediaObserver
+    public mediaObs: MediaObserver,
+    public dialog: MatDialog
   ) { }
 
   ngOnInit(): void {
@@ -31,7 +34,16 @@ export class PortofolioComponent implements OnInit {
     })
   }
 
-  goToSourceCode() {
-    window.open('https://github.com/iongie/my-portofolio.git', "_blank");
+  viewResume(){
+    const dialogRef = this.dialog.open(ResumeComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
+
+  downloadCv(){
+    window.open('https://gigihsantoso.id/file/resume-gigih.docx', "_blank");
+  }
+
 }

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { ComponentModule } from '../component/component.module';
 import { Routes, RouterModule } from '@angular/router';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 export const routes: Routes = [
   {
@@ -16,7 +17,8 @@ export const routes: Routes = [
   imports: [
     CommonModule, 
     RouterModule.forChild(routes),
-    ComponentModule
+    ComponentModule,
+    MatGridListModule
   ]
 })
 export class HomeModule { }

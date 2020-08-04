@@ -3,11 +3,11 @@ import { Subscription } from 'rxjs';
 import { MediaObserver, MediaChange } from '@angular/flex-layout';
 
 @Component({
-  selector: 'gigih-portofolio',
-  templateUrl: './portofolio.component.html',
-  styleUrls: ['./portofolio.component.css']
+  selector: 'gigih-event-registration',
+  templateUrl: './event-registration.component.html',
+  styleUrls: ['./event-registration.component.css']
 })
-export class PortofolioComponent implements OnInit {
+export class EventRegistrationComponent implements OnInit {
   mediaSub: Subscription;
   deviceXs: boolean;
   deviceMd: boolean;
@@ -30,8 +30,9 @@ export class PortofolioComponent implements OnInit {
       return (this.deviceMd, this.deviceSm, this.deviceXs, this.deviceLg)
     })
   }
-
+  
   goToSourceCode() {
-    window.open('https://github.com/iongie/my-portofolio.git', "_blank");
+    window.open('https://github.com/iongie/lievee-two.git', "_blank");
   }
+
 }

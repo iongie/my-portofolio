@@ -1,21 +1,20 @@
 <div class="row-grey" fxLayout="column" fxLayoutAlign="space-around center" >
     <img src="../../../assets/image/hotel-mockup.jpg"class="center-block" [ngClass]="(deviceXs)? 'img-responsive-xs': 'img-responsive'">
     <div [ngClass]="(deviceXs)? 'penjelasan-xs': 'penjelasan'" fxLayout="column" fxLayoutAlign="center start">
-        <div class="mat-headline">Frontend for Hotel Management System</div>
+        <div class="mat-headline">Frontend for Event Registration</div>
         <div class="mat-body-1">
             A web application to help developers and programmers build beautifully designed portfolios in minutes.
         </div>
         <div class="mat-subheading-1">Technology</div>
         <div class="mat-body-1">
-            A web application is built using Angular2+, with a node backend for handling API requests, and runs on VPS. Mysql provides the database solution and Bootstrap 4 is the CSS framework of choice for this project
+            A web application is built using Angular2+. Mysql provides the database solution and Bootstrap 4 is the CSS framework of choice for this project
         </div>
     </div>
     
     <div [ngClass]="(deviceXs)? 'ikon-teknologi-xs': 'ikon-teknologi'" fxLayout="column" fxLayoutAlign="center center">
         <div class="help-grid">
-            <mat-grid-list [cols]="(deviceXs || deviceSm)? '2': '4'" rowHeight="100px">
+            <mat-grid-list [cols]="(deviceXs || deviceSm)? '2': '3'" rowHeight="100px">
                 <mat-grid-tile><img src="../../../assets/image/angular.png" class="techlogo" width="100"></mat-grid-tile>
-                <mat-grid-tile><img src="../../../assets/image/nodejs.png" class="techlogo" width="100"></mat-grid-tile>
                 <mat-grid-tile><img src="../../../assets/image/bootstrap.png" class="techlogo" width="100"></mat-grid-tile>
                 <mat-grid-tile><img src="../../../assets/image/akveo-logo.png" class="techlogo" width="100"></mat-grid-tile>
             </mat-grid-list>

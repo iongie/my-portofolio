@@ -1,0 +1,42 @@
+<div class="mat-display-1" mat-dialog-title  fxLayout="column" fxLayoutAlign="space-around center">Curriculum Vitae</div>
+<mat-dialog-content class="mat-typography">
+    <p>
+        Secara singkat, saya laki-laki berusia 31 tahun dengan pendidikan terakhir di STMIK Nusa Mandiri jurusan Sistem Informasi.
+        memiliki pengalaman kerja sebagai admin selama 5 tahun dan sebagai IT programmer/developer selama 1.5 tahun
+    </p>
+    <div class="mat-headline">Biodata</div>
+    <div class="about-you"  fxLayout="column" fxLayoutAlign="space-between stretch">
+        <div class="my-name mat-body">Gigih Santoso</div>
+        <div class="my-position mat-body">Tangerang, 24 Mei 1989</div>
+        <div class="my-gender mat-body">Pria</div>
+        <div class="my-email mat-body">gigih985042@gmail.com</div>
+        <div class="my-address mat-body">Jalan Pendidikan 1 004/004 No.59, Parigi-lama, Pondok Aren</div>
+    </div>
+    <div class="mat-headline">Skill</div>
+    <div class="skill">
+        <mat-chip-list aria-label="Fish selection">
+            <mat-chip>Angular</mat-chip>
+            <mat-chip>NodeJs</mat-chip>
+            <mat-chip>Microsoft Office</mat-chip>
+            <mat-chip>Mysql</mat-chip>
+            <mat-chip>Socket.io</mat-chip>
+        </mat-chip-list>
+    </div>
+    <div class="mat-headline">Riwayat Pendidikan</div>
+    <div class="scholl"  fxLayout="column" fxLayoutAlign="space-between stretch">
+        <div class="my-scholl mat-body">S1 - Sistem Informasi STMIK NUSA MANDIRI (2015 -2016)</div>
+        <div class="my-scholl mat-body">D3 - Manajemen Informatika BSI (2007-2010)</div>
+        <div class="my-scholl mat-body">SMA - Muhammadiyah 18 Jakarta (2004-2007)</div>
+        <div class="my-scholl mat-body">SMP - Perwira Jakarta (2001-2004)</div>
+        <div class="my-scholl mat-body">SDN - SDN V Pondok Betung (1995-2001)</div>
+    </div>
+    <div class="mat-headline">Pengalaman Kerja</div>
+    <div class="pengalaman-kerja"  fxLayout="column" fxLayoutAlign="space-between stretch">
+        <div class="my-pengalaman-kerja-perusahaan mat-body">PT. MNC SKY VISION (2011 -2018)</div>
+        <div class="my-pengalaman-kerja-perusahaan mat-body">PT. LIEVEE CIPTATAMA INDONESIA (2018-sekarang)</div>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial (click)="downloadCv()">Download CV</button>
+</mat-dialog-actions>

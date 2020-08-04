@@ -1,0 +1,19 @@
+.about-you,
+.pengalaman-kerja,
+.scholl,
+.skill {
+  margin: 12px;
+}
+
+.my-name,
+.my-position,
+.my-address,
+.my-email,
+.my-gender,
+.my-pengalaman-kerja-perusahaan,
+.my-scholl {
+  border: 1px solid #bac4df;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 8px 4px 8px 4px;
+}

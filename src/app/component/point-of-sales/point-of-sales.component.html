@@ -1,0 +1,28 @@
+<div class="row-white" fxLayout="column" fxLayoutAlign="space-around center" >
+    <img src="../../../assets/image/example-coding-portofolio.png" class="center-block" [ngClass]="(deviceXs)? 'img-responsive-xs': 'img-responsive'">
+    <div [ngClass]="(deviceXs)? 'penjelasan-xs': 'penjelasan'" fxLayout="column" fxLayoutAlign="center start">
+        <div class="mat-headline">Frontend dan Backend Point of sales</div>
+        <div class="mat-body-1">
+            A web application to help developers and programmers build beautifully designed portfolios in minutes.
+        </div>
+        <div class="mat-subheading-1">Technology</div>
+        <div class="mat-body-1">
+            Frontend dan Backend Point of sales is built using Angular2+, with a node backend for handling API requests, and runs on VPS. Mysql provides the database solution and Angular Material is the CSS framework of choice for this project
+        </div>
+    </div>
+    <div [ngClass]="(deviceXs)? 'ikon-teknologi-xs': 'ikon-teknologi'" fxLayout="column" fxLayoutAlign="center center">
+        <div class="help-grid">
+            <mat-grid-list [cols]="(deviceXs || deviceSm)? '2': '3'" rowHeight="100px">
+                <mat-grid-tile><img src="../../../assets/image/angular.png" class="techlogo" width="100"></mat-grid-tile>
+                <mat-grid-tile><img src="../../../assets/image/nodejs.png" class="techlogo" width="100"></mat-grid-tile>
+                <mat-grid-tile><img src="../../../assets/image/angular-material.png" class="techlogo" width="100"></mat-grid-tile>
+                <mat-grid-tile><img src="../../../assets/image/socket.png" class="techlogo" width="100"></mat-grid-tile>
+                <mat-grid-tile><img src="../../../assets/image/mysql.svg" class="techlogo" width="100"></mat-grid-tile>
+            </mat-grid-list>
+        </div>
+    </div>
+    <div fxLayout="column" fxLayoutAlign="space-around center" class="action" >
+        <button mat-raised-button color="primary" (click)="goToSourceCodeFrontEnd()">Source code - Front end</button>
+        <button mat-raised-button color="primary" (click)="goToSourceCodeBackEnd()">Source code - Back end</button>
+    </div>
+</div>

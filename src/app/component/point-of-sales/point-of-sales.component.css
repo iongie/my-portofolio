@@ -31,6 +31,7 @@ img {
     margin: 12px;
 }
 
+
 .penjelasan-xs {
     width: 80%;
     height: auto;
@@ -43,8 +44,16 @@ img {
     margin: 12px;
 }
 
+
 .ikon-teknologi-xs {
     width: 80%;
     height: auto;
+    margin: 12px;
+}
+
+
+.action {
+    width: 30%;
+    height: 100px;
     margin: 12px;
 }

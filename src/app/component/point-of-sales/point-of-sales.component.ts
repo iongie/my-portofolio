@@ -3,11 +3,11 @@ import { Subscription } from 'rxjs';
 import { MediaObserver, MediaChange } from '@angular/flex-layout';
 
 @Component({
-  selector: 'gigih-portofolio',
-  templateUrl: './portofolio.component.html',
-  styleUrls: ['./portofolio.component.css']
+  selector: 'gigih-point-of-sales',
+  templateUrl: './point-of-sales.component.html',
+  styleUrls: ['./point-of-sales.component.css']
 })
-export class PortofolioComponent implements OnInit {
+export class PointOfSalesComponent implements OnInit {
   mediaSub: Subscription;
   deviceXs: boolean;
   deviceMd: boolean;
@@ -31,7 +31,11 @@ export class PortofolioComponent implements OnInit {
     })
   }
 
-  goToSourceCode() {
-    window.open('https://github.com/iongie/my-portofolio.git', "_blank");
+  goToSourceCodeFrontEnd(){
+    window.open('https://github.com/iongie/pos-rev-revision.git', '_blank');
+  }
+
+  goToSourceCodeBackEnd(){
+    window.open('https://github.com/iongie/POS-REV-API.git', '_blank');
   }
 }
