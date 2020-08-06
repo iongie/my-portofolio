@@ -48,3 +48,9 @@ img {
     height: auto;
     margin: 12px;
 }
+
+.action {
+    width: 30%;
+    height: 100px;
+    margin: 12px;
+}

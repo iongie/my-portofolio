@@ -16,7 +16,9 @@ import { AppRoutingModule } from './app.routing';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    {provide: 'googleTagManagerId',  useValue: 'GTM-M7J8FSH'}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

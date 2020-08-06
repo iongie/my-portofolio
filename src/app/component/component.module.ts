@@ -38,6 +38,9 @@ import { MatChipsModule } from '@angular/material/chips';
     PointOfSalesComponent,
     EventRegistrationComponent,
     MyCvComponent,
+  ],
+  providers: [
+    {provide: 'googleTagManagerId',  useValue: 'GTM-M7J8FSH'}
   ]
 })
 export class ComponentModule { }

@@ -19,6 +19,9 @@ export const routes: Routes = [
     RouterModule.forChild(routes),
     ComponentModule,
     MatGridListModule
+  ],
+  providers: [
+    {provide: 'googleTagManagerId',  useValue: 'GTM-M7J8FSH'}
   ]
 })
 export class HomeModule { }

@@ -31,7 +31,11 @@ export class PortofolioComponent implements OnInit {
     })
   }
 
-  goToSourceCode() {
+  goToSourceCodeFe() {
     window.open('https://github.com/iongie/my-portofolio.git', "_blank");
+  }
+
+  goToSourceCodeBe() {
+    window.open('https://github.com/iongie/my-portofolio-server.git', "_blank");
   }
 }

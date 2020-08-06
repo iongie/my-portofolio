@@ -19,5 +19,8 @@
             </mat-grid-list>
         </div>
     </div>
-    <button mat-raised-button color="primary" (click)="goToSourceCode()">Source code</button>
+    <div fxLayout="column" fxLayoutAlign="space-around center" class="action" >
+        <button mat-raised-button color="primary" (click)="goToSourceCodeBe()">Backend -Source code</button>
+        <button mat-raised-button color="primary" (click)="goToSourceCodeFe()">Frontend - Source code</button>
+    </div>
 </div>
