@@ -54,3 +54,9 @@ img {
     height: 100px;
     margin: 12px;
 }
+
+
+.mat-subheading-1 {
+    margin-top: 8px;
+    font-weight: 900;
+}

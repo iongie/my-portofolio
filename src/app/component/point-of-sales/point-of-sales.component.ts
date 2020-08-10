@@ -38,4 +38,26 @@ export class PointOfSalesComponent implements OnInit {
   goToSourceCodeBackEnd(){
     window.open('https://github.com/iongie/POS-REV-API.git', '_blank');
   }
+
+  goToAngularLink() {
+    window.open('https://angular.io/', "_blank");
+  }
+
+  goToAngularMaterialLink() {
+    window.open('https://material.angular.io/', "_blank");
+  }
+  
+
+  goToBootsrapLink() {
+    window.open('https://getbootstrap.com/', "_blank");
+  }
+
+  goToNodeJsLink() {
+    window.open('https://nodejs.org/', "_blank");
+  }
+
+
+  goToMysqlLink() {
+    window.open('https://www.mysql.com/', "_blank");
+  }
 }

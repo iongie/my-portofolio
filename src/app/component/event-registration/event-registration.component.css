@@ -52,3 +52,8 @@ img {
     height: auto;
     margin: 12px;
 }
+
+.mat-subheading-1 {
+    margin-top: 8px;
+    font-weight: 900;
+}

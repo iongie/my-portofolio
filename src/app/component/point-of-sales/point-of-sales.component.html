@@ -1,23 +1,24 @@
 <div class="row-white" fxLayout="column" fxLayoutAlign="space-around center" >
-    <img src="../../../assets/image/example-coding-portofolio.png" class="center-block" [ngClass]="(deviceXs)? 'img-responsive-xs': 'img-responsive'">
+    <img src="../../../assets/image/example-coding-portofolio.png" alt="Point Of Sales - Gigih Santoso" class="center-block" [ngClass]="(deviceXs)? 'img-responsive-xs': 'img-responsive'">
     <div [ngClass]="(deviceXs)? 'penjelasan-xs': 'penjelasan'" fxLayout="column" fxLayoutAlign="center start">
-        <div class="mat-headline">Frontend dan Backend Point of sales</div>
+        <div class="mat-headline">Point Of Sales</div>
         <div class="mat-body-1">
-            A web application to help developers and programmers build beautifully designed portfolios in minutes.
+            Ini merupakan source kode user interface dan API dari aplikasi Point of Sales.
         </div>
-        <div class="mat-subheading-1">Technology</div>
+        <div class="mat-subheading-1">Teknologi yang digunakan</div>
         <div class="mat-body-1">
-            Frontend dan Backend Point of sales is built using Angular2+, with a node backend for handling API requests, and runs on VPS. Mysql provides the database solution and Angular Material is the CSS framework of choice for this project
+            Dalam pembuatannya menggunakan Angular sebagai framework javascript.
+            Dengan ditunjang Coreui untuk angular sebagai template dashboar admin yang didukung teknologi Bootstrap serta Angular Material  sebagai teknologinya. Dengan Menggunakan Mysql sebagai solusi penyimpanan dan socket.io sebagai protokol komunikasi data. 
         </div>
     </div>
     <div [ngClass]="(deviceXs)? 'ikon-teknologi-xs': 'ikon-teknologi'" fxLayout="column" fxLayoutAlign="center center">
         <div class="help-grid">
             <mat-grid-list [cols]="(deviceXs || deviceSm)? '2': '3'" rowHeight="100px">
-                <mat-grid-tile><img src="../../../assets/image/angular.png" class="techlogo" width="100"></mat-grid-tile>
-                <mat-grid-tile><img src="../../../assets/image/nodejs.png" class="techlogo" width="100"></mat-grid-tile>
-                <mat-grid-tile><img src="../../../assets/image/angular-material.png" class="techlogo" width="100"></mat-grid-tile>
-                <mat-grid-tile><img src="../../../assets/image/socket.png" class="techlogo" width="100"></mat-grid-tile>
-                <mat-grid-tile><img src="../../../assets/image/mysql.svg" class="techlogo" width="100"></mat-grid-tile>
+                <mat-grid-tile><img src="../../../assets/image/angular.png" (click)="goToAngularLink()" alt="Menggunakan Framework Angular - Gigih Santoso" class="techlogo" width="100"></mat-grid-tile>
+                <mat-grid-tile><img src="../../../assets/image/nodejs.png" (click)="goToNodeJsLink()" alt="Menggunakan Framework Node Js - Gigih Santoso" class="techlogo" width="100"></mat-grid-tile>
+                <mat-grid-tile><img src="../../../assets/image/bootstrap.png" (click)="goToBootsrapLink()" alt="Menggunakan Framework Bootstrap - Gigih Santoso" class="techlogo" width="100"></mat-grid-tile>
+                <mat-grid-tile><img src="../../../assets/image/angular-material.png" (click)="goToAngularMaterialLink()" alt="Menggunakan Akveo Admin - Gigih Santoso" class="techlogo" width="100"></mat-grid-tile>
+                <mat-grid-tile><img src="../../../assets/image/mysql.svg" (click)="goToMysqlLink()" alt="Menggunakan Mysql - Gigih Santoso" class="techlogo" width="100"></mat-grid-tile>
             </mat-grid-list>
         </div>
     </div>

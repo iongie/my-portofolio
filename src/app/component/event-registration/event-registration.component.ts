@@ -35,4 +35,17 @@ export class EventRegistrationComponent implements OnInit {
     window.open('https://github.com/iongie/lievee-two.git', "_blank");
   }
 
+  goToAngularLink() {
+    window.open('https://angular.io/', "_blank");
+  }
+
+  goToAkveoAdminLink() {
+    window.open('https://akveo.github.io/ngx-admin/', "_blank");
+  }
+  
+
+  goToBootsrapLink() {
+    window.open('https://getbootstrap.com/', "_blank");
+  }
+
 }
